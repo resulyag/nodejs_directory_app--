@@ -1,0 +1,26 @@
+{
+  "name": "nodejs_directory_app",
+  "version": "1.0.0",
+  "description": "nodejs_express_sequelize_mysql",
+  "main": "server.js",
+  "scripts": {
+    "start": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all && nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "rahimresulyg",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.4.1"
+  }
+}
